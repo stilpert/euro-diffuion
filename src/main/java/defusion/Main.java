@@ -15,15 +15,15 @@ public class Main {
     for (int i = 0; i < strings.size(); i++) {
       testCaseCount++;
       int numberCountries = Integer.parseInt(strings.get(i));
-      WorldMap worldMap = WorldMap.buildFromStrings(strings.subList(i + 1, i + numberCountries + 1));
+      EuropeanUnion europeanUnion = EuropeanUnion.buildFromStrings(strings.subList(i + 1, i + numberCountries + 1));
       i += numberCountries;
 
-      if (worldMap.validateCoordinates()) {
-        if (worldMap.checkCountriesAccessibility()) {
-          worldMap.prepareToStart();
+      if (europeanUnion.validateCoordinates()) {
+        if (europeanUnion.checkCountriesAccessibility()) {
+          europeanUnion.prepareToStart();
           writer.println("Case Number " + testCaseCount);
-          worldMap.doDiffusion();
-          worldMap.showResults(writer);
+          europeanUnion.doDiffusion();
+          europeanUnion.showResults(writer);
         }
         else {
           writer.println("Case Number " + testCaseCount);

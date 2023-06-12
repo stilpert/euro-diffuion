@@ -1,13 +1,12 @@
 package defusion;
 
 import java.io.PrintWriter;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class WorldMap {
+public class EuropeanUnion {
   private int[][] matrix;
   private HashMap<Integer, City> cities;
   private HashMap<Integer, Country> countries;
@@ -15,19 +14,19 @@ public class WorldMap {
   private static final int maxCoord = 9;
   private static final int minCoord = 0;
 
-  private WorldMap() {
+  private EuropeanUnion() {
     cities = new HashMap<>();
     countries = new HashMap<>();
     matrix = new int[10][10];
     citiesNeighbourship = new HashMap<>();
   }
 
-  public static WorldMap buildFromStrings(List<String> countryStrings) {
-    WorldMap worldMap = new WorldMap();
+  public static EuropeanUnion buildFromStrings(List<String> countryStrings) {
+    EuropeanUnion europeanUnion = new EuropeanUnion();
     countryStrings.stream()
       .map(Country::buildFromString)
-      .forEach(worldMap::addCountry);
-    return worldMap;
+      .forEach(europeanUnion::addCountry);
+    return europeanUnion;
   }
 
   public void prepareToStart() {

@@ -1,6 +1,7 @@
 package defusion;
 
 import lombok.Getter;
+import lombok.Setter;
 
 public class Country {
   public final String name;
@@ -8,6 +9,8 @@ public class Country {
   private final Coordinate lowerLeftPosition;
   @Getter
   private final Coordinate upperRightPosition;
+
+  @Getter @Setter
   private int filledDay;
 
   private Country(String name, Coordinate lowerLeftPosition, Coordinate upperRightPosition) {
@@ -30,13 +33,5 @@ public class Country {
         Integer.parseInt(stringParts[4])
       )
     );
-  }
-
-  public int getFilledDay() {
-    return filledDay;
-  }
-
-  public void setFilledDay(int filledDay) {
-    this.filledDay = filledDay;
   }
 }

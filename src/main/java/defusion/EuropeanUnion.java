@@ -60,22 +60,22 @@ public class EuropeanUnion {
                     city.sendCoins(neighbour);
                 }
             }
-        } while (!checkCitiesDone(day));
+        } while (!isCitiesComplete(day));
     }
 
-    private boolean checkCitiesDone(int day) {
+    private boolean isCitiesComplete(int day) {
         for (Country country : countries) {
             if (country.getCompleteDay() < 0) {
                 country.setCompleteDay(day);
             }
         }
-        boolean allCitiesDone = true;
+        boolean allCitiesComplete = true;
         for (City city : cities.values()) {
-            if (!city.checkIfDone()) {
-                allCitiesDone = false;
+            if (!city.isComplete()) {
+                allCitiesComplete = false;
                 city.getCountry().setCompleteDay(-1);
             }
         }
-        return allCitiesDone;
+        return allCitiesComplete;
     }
 }

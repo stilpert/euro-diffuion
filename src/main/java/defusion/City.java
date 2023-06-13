@@ -45,7 +45,7 @@ public class City {
         }
     }
 
-    public boolean checkIfDone() {
+    public boolean isComplete() {
         return accounts.values().stream().noneMatch(account -> account.getBalance() == 0);
     }
 

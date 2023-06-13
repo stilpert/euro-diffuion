@@ -1,11 +1,16 @@
 package defusion;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Objects;
+
 import lombok.Getter;
 
 
 public class City {
+  private final static int START_COINS_NUMBER = 1000000;
   @Getter
   private final Coordinate position;
   @Getter
@@ -13,7 +18,8 @@ public class City {
   private HashMap<Country, Integer> currentBalance = new HashMap<>();
   private HashMap<Country, Integer> incomingBalance = new HashMap<>();
   private HashMap<Country, Integer> amountToPay = new HashMap<>();
-  private final int initialAmountOfCoins = 1000000;
+  @Getter
+  private List<City> neihgbours = new ArrayList<>();
 
   public City(Coordinate position, Country country) {
     this.position = position;
@@ -50,7 +56,7 @@ public class City {
   public void setInitialBalances(Collection<Country> countries) {
     for (Country country : countries) {
       if (this.country.equals(country)) {
-        currentBalance.put(country, initialAmountOfCoins);
+        currentBalance.put(country, START_COINS_NUMBER);
       }
       else {
         currentBalance.put(country, 0);
@@ -69,5 +75,11 @@ public class City {
     return true;
   }
 
+  public void addNeighbourIfPresent(City neighbour) {
+    if(Objects.nonNull(neighbour)) neihgbours.add(neighbour);
+  }
 
+  public static int positionHash(int x, int y) {
+    return 10 * x + y;
+  }
 }

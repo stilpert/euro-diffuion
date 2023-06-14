@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd269751-9b3e-48d1-a8a9-40720b297f52" name="Changes" comment="rework EuropeanUnion">
-      <change afterPath="$PROJECT_DIR$/src/main/java/defusion/Account.java" afterDir="false" />
+    <list default="true" id="dd269751-9b3e-48d1-a8a9-40720b297f52" name="Changes" comment="make some refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/defusion/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/defusion/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/defusion/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/Coordinate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/defusion/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/Country.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/defusion/EuropeanUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/EuropeanUnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/defusion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "/home/idykyi/programming/euro-diffusion",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/idykyi/programming/euro-diffusion&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -126,24 +126,29 @@
       <option name="project" value="LOCAL" />
       <updated>1686644035373</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add accounts">
+      <created>1686647408337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686647408337</updated>
+    </task>
+    <task id="LOCAL-00005" summary="make some refactoring">
+      <created>1686648439582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686648439582</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="solve euro-diffusion task" />
     <MESSAGE value="make some minor changes" />
     <MESSAGE value="rework EuropeanUnion" />
-    <option name="LAST_COMMIT_MESSAGE" value="rework EuropeanUnion" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/defusion/EuropeanUnion.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add accounts" />
+    <MESSAGE value="make some refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="make some refactoring" />
   </component>
 </project>

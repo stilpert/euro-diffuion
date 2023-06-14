@@ -3,12 +3,18 @@ package defusion;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Country {
     public final String name;
     @Getter
     private final Coordinate lowerLeftPosition;
     @Getter
     private final Coordinate upperRightPosition;
+    @Getter
+    private final List<City> cities = new ArrayList<>();
 
     @Getter
     @Setter
@@ -33,5 +39,13 @@ public class Country {
                         Integer.parseInt(stringParts[4])
                 )
         );
+    }
+
+    public boolean isIsolated() {
+        return cities.stream()
+                .flatMap(city -> city.getNeihgbours().stream())
+                .map(City::getCountry)
+                .distinct()
+                .count() == 1;
     }
 }

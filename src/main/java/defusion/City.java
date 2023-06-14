@@ -46,7 +46,7 @@ public class City {
     }
 
     public boolean isComplete() {
-        return accounts.values().stream().noneMatch(account -> account.getBalance() == 0);
+        return accounts.values().stream().noneMatch(Account::nonEmpty);
     }
 
     public void addNeighbourIfPresent(City neighbour) {

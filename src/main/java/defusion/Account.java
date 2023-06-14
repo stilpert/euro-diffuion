@@ -11,4 +11,8 @@ public class Account {
     void setTransactionSum() {
         transactionSum = balance / 1000;
     }
+
+    public boolean nonEmpty() {
+        return this.getBalance() == 0;
+    }
 }

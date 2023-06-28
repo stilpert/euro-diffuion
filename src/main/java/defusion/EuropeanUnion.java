@@ -78,18 +78,22 @@ public class EuropeanUnion {
     }
 
     private boolean isCitiesComplete(int day) {
+        boolean allCountriesComplete = true;
         for (Country country : countries) {
+            boolean allCitiesComplete = true;
+            for (City city : country.getCities()) {
+                if (!city.isComplete()) {
+                    allCitiesComplete = false;
+                }
+            }
+            int countryCompleteDay = allCitiesComplete ? day : -1;
+            country.setCompleteDay(countryCompleteDay);
+
             if (country.getCompleteDay() < 0) {
-                country.setCompleteDay(day);
+                allCountriesComplete = false;
             }
         }
-        boolean allCitiesComplete = true;
-        for (City city : cities.values()) {
-            if (!city.isComplete()) {
-                allCitiesComplete = false;
-                city.getCountry().setCompleteDay(-1);
-            }
-        }
-        return allCitiesComplete;
+        
+        return allCountriesComplete;
     }
 }

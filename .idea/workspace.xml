@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd269751-9b3e-48d1-a8a9-40720b297f52" name="Changes" comment="make some refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/defusion/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/defusion/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/defusion/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/defusion/EuropeanUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/defusion/EuropeanUnion.java" afterDir="false" />
-    </list>
+    <list default="true" id="dd269751-9b3e-48d1-a8a9-40720b297f52" name="Changes" comment="add fixes after review" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686648439582</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add fixes after review">
+      <created>1686731676854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686731676854</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,6 +148,7 @@
     <MESSAGE value="rework EuropeanUnion" />
     <MESSAGE value="add accounts" />
     <MESSAGE value="make some refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="make some refactoring" />
+    <MESSAGE value="add fixes after review" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fixes after review" />
   </component>
 </project>
